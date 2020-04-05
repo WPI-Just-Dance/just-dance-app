@@ -2,13 +2,13 @@ import React from "react";
 
 export const Card = props => {
   return(
-      <div>
-          <img src={props.ref} alt={`${props.name} song card`}/>
-          <h2>{props.name}</h2>
-          <small>{props.artist}</small>
-          <small>{props.people}</small>
-          <small>{props.difficulty}</small>
-          <small>{ props.origin !== 'Exclusive' ? `Just Dance ${props.origin}` : "Exclusive" }</small>
+      <div className={'card'}>
+          <img src={props.src} alt={`${props.name} song card`}/>
+          <p className={'title'}>{props.name}</p>
+          <p>{props.artist}</p>
+          <p>{props.people}</p>
+          <p>{props.difficulty}</p>
+          <p>{ props.origin !== 'Exclusive' ? `Just Dance ${props.origin}` : "Exclusive" }</p>
       </div>
   )
 };

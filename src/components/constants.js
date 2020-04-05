@@ -41,7 +41,7 @@ export const CATALOG = [
     },
     {
         name: 'Sucker',
-        artist: 'Jonas Brother',
+        artist: 'Jonas Brothers',
         people: 'Duet',
         difficulty: 'Easy',
         origin: 'Exclusive',

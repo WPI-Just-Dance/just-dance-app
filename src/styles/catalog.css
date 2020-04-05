@@ -1,0 +1,46 @@
+.catalog main {
+    display: flex;
+    flex-flow: wrap row;
+}
+
+.catalog .card .title {
+    margin: 0.5rem auto 0.5rem auto;
+    font-size: large;
+    font-family: "Uni Sans Heavy", sans-serif;
+}
+
+.catalog .card {
+    text-align: center;
+    padding: 0.5rem;
+    margin: 0 auto 0 auto;
+    align-items: center;
+    max-width: 10rem;
+}
+
+.catalog .card img {
+    max-width: 10rem;
+    border-radius: 1rem;
+}
+
+.catalog .card p {
+    font-size: small;
+    margin: auto;
+}
+
+@media (max-width: 400px) {
+    .catalog main {
+        display: flex;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        flex-flow: column wrap;
+        max-height: 40rem;
+    }
+
+    .catalog header {
+        display: none;
+    }
+
+    .catalog .card p {
+        font-size: x-small;
+    }
+}

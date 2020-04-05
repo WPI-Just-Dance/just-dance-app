@@ -11,4 +11,19 @@
 
 html {
     font-family: Whitney, "Open Sans",'Helvetica','Lato',sans-serif;
+    color: #000244;
+}
+
+header {
+    padding: 5rem;
+    text-align: center;
+}
+
+main {
+    margin: auto;
+    max-width: 50rem;
+}
+
+.page {
+    width: 100%;
 }
