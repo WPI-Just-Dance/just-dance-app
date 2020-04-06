@@ -1,25 +1,71 @@
 .catalog main {
     display: flex;
     flex-flow: wrap row;
+    justify-content: center;
+}
+
+.catalog header {
+    text-shadow: 0.1rem 0.1rem 0.2rem #b8caf2, -0.1rem -0.1rem 0.2rem white, 0 0 1rem white;
 }
 
 .catalog .card .title {
-    margin: 0.5rem auto 0.5rem auto;
+    position: relative;
+    width: 12rem;
+    height: 1rem;
+    top: 1rem;
+    margin: 0 auto 0.5rem auto;
     font-size: large;
     font-family: "Uni Sans Heavy", sans-serif;
+}
+.catalog .title p {
+    padding: 0.5rem;
+    background: white;
+    border-radius: 1rem;
+    box-shadow: -0.1rem -0.1rem 0.2rem rgba(238,238,255, 0.7), 0.1rem 0.1rem 0.2rem rgba(33,33,90, 0.7);
 }
 
 .catalog .card {
     text-align: center;
     padding: 0.5rem;
-    margin: 0 auto 0 auto;
+    margin: 1rem;
     align-items: center;
-    max-width: 10rem;
+    max-width: 15rem;
+    border-radius: 1rem;
+    background: linear-gradient(to bottom right, #eeeeff, #b8caf2);
+    box-shadow: 0.5rem 0.5rem 1rem #b8caf2, -0.5rem -0.5rem 1rem white, inset 0.25rem 0.25rem 1rem #eeeeff;
 }
 
 .catalog .card img {
-    max-width: 10rem;
+    width: auto;
+    max-width: 15rem;
     border-radius: 1rem;
+}
+
+.catalog .card .difficulty {
+    width: 5rem;
+    padding: 0.3rem;
+    margin: auto;
+    position: relative;
+    bottom: 1rem;
+    color: white;
+    border-radius: 1rem;
+}
+
+.Easy {
+    background: linear-gradient(to bottom right, green, cyan);
+    box-shadow: 0 0 1rem lime, inset 0 0 0.4rem lime;
+}
+.Medium {
+    background: linear-gradient(to bottom right, darkred, orangered);
+    box-shadow: 0 0 1rem orange, inset 0 0 0.4rem orange;
+}
+.Hard {
+    background: linear-gradient(to bottom right, darkred, magenta);
+    box-shadow: 0 0 1rem hotpink, inset 0 0 0.4rem hotpink;
+}
+.Extreme {
+    background: linear-gradient(to bottom right, black, blue);
+    box-shadow: 0 0 1rem darkblue, inset 0 0 0.4rem darkblue;
 }
 
 .catalog .card p {
@@ -27,13 +73,27 @@
     margin: auto;
 }
 
-@media (max-width: 400px) {
+.searchbar {
+    position: sticky;
+    top: 5rem;
+    left: 4rem;
+    z-index: 100;
+    padding: 1rem;
+    border-radius: 2rem;
+    border: 0;
+    display: block;
+    align-self: center;
+    max-width: 50rem;
+    box-shadow: 0.5rem 0.5rem 1rem #b8caf2, -0.5rem -0.5rem 1rem white, inset 0.25rem 0.25rem 1rem #eeeeff;
+}
+
+@media (max-width: 600px) {
     .catalog main {
         display: flex;
         overflow-x: scroll;
         overflow-y: hidden;
         flex-flow: column wrap;
-        max-height: 40rem;
+        max-height: 60rem;
     }
 
     .catalog header {
@@ -41,6 +101,17 @@
     }
 
     .catalog .card p {
-        font-size: x-small;
+        font-size: small;
+    }
+
+    .catalog .card {
+    }
+
+    .catalog main::-webkit-scrollbar {display: none}
+}
+
+@media (max-width: 400px) {
+    .catalog main {
+        max-height: 30rem;
     }
 }

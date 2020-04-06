@@ -9,9 +9,19 @@
     src: url("../fonts/Uni Sans Heavy.otf");
 }
 
+body {
+    margin: 0;
+}
+
 html {
     font-family: Whitney, "Open Sans",'Helvetica','Lato',sans-serif;
+    text-rendering: optimizeSpeed;
+    background: #ddeaff;
     color: #000244;
+}
+
+h1 {
+    font-family: "Uni Sans Heavy", sans-serif;
 }
 
 header {
@@ -21,7 +31,7 @@ header {
 
 main {
     margin: auto;
-    max-width: 50rem;
+    max-width: 75rem;
 }
 
 .page {

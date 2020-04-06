@@ -4476,7 +4476,7 @@ export const CATALOG = [
         ref: 'https://vignette.wikia.nocookie.net/justdance/images/a/aa/Williamtell.jpg/revision/latest?cb=20151023165220'
     },
     {
-        name: 'Work Bitch (In Game as Work Work)',
+        name: 'Work Work',
         artist: 'Britney Spears',
         theme: 'Extreme',
         people: 'Solo',
@@ -4485,7 +4485,7 @@ export const CATALOG = [
         ref: 'https://vignette.wikia.nocookie.net/justdance/images/c/cc/Workworkalt_cover_generic.png/revision/latest?cb=20181022214600'
     },
     {
-        name: 'Work Work (Work Bitch)',
+        name: 'Work Work',
         artist: 'Britney Spears',
         people: 'Trio',
         difficulty: 'Medium',
